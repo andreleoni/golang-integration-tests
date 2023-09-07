@@ -1,0 +1,12 @@
+with-expecter: true
+mockname: "{{.InterfaceName}}"
+filename: "{{.MockName}}.go"
+outpkg: mocks
+dir: mocks
+packages:
+  build-tags-integration-tests:
+    config:
+      all: true
+  build-tags-integration-tests/internal/request:
+    config:
+      all: true
