@@ -1,6 +1,5 @@
-mocks:
-	docker run -v "$PWD":/src -w /src vektra/mockery --all --inpackage
-	chown -R $USER:$USER *
+generate_mocks:
+	docker run -v "$PWD":/src -w /src vektra/mockery --all
 
 unit_test:
 	go test ./...
