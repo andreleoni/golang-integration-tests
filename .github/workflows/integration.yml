@@ -2,6 +2,9 @@ name: Go package
 
 on: [push]
 
+with:
+  max_attempts: 3
+
 jobs:
   build:
 
